@@ -1,0 +1,1912 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#has"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#AVL_Tree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#AVL_Tree">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#AVL_Tree"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Array -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Array">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Array"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#BT_TowerofHN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#BT_TowerofHN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#BT_TowerofHN"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Back_Tracking -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Back_Tracking">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Back_Tracking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Binary_SerchTree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Binary_SerchTree">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Binary_SearchTree"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cây tìm kiếm nhị phân là gì ?
+Một cây tìm kiếm nhị phân (Binary Search Tree – viết tắt là BST) là một cây mà trong đó tất cả các nút đều có các đặc điểm sau:
+
+Cây con bên trái của một nút có khóa (key) nhỏ hơn hoặc bằng giá trị khóa của nút cha (của cây con này).
+
+Cây con bên phải của một nút có khóa lớn hơn hoặc bằng giá trị khóa của nút cha (của cây con này).
+
+Vì thế có thể nói rằng, một cây tìm kiếm nhị phân (BST) phân chia tất cả các cây con của nó thành hai phần: cây con bên trái và cây con bên phải và có thể được định nghĩa như sau:
+
+left_subtree (keys)  ≤  node (key)  ≤  right_subtree (keys)
+
+Hoạt động cơ bản trên cây tìm kiếm nhị phân
+Dưới đây là một số hoạt động cơ bản có thể được thực hiện trên cây tìm kiếm nhị phân:
+
+Hoạt động tìm kiếm: tìm kiếm một phần tử trong một cây.
+
+Hoạt động chèn: chèn một phần tử vào trong một cây.
+
+Hoạt động duyệt tiền thứ tự: duyệt một cây theo cách thức duyệt tiền thứ tự.
+
+Hoạt động duyệt trung thứ tự: duyệt một cây theo cách thứ duyệt trung thứ tự.
+
+Hoạt động duyệt hậu thứ tự: duyệt một cây theo cách thức duyệt hậu thứ tự.
+
+Nút (Node) trong cây tìm kiếm nhị phân
+Một nút có một vài dữ liệu, tham chiếu tới các nút con bên trái và nút con bên phải của nó.
+
+struct node {
+   int data;   
+   struct node *leftChild;
+   struct node *rightChild;
+};
+Hoạt động tìm kiếm trong cây tìm kiếm nhị phân
+Mỗi khi một phần tử được tìm kiếm: bắt đầu tìm kiếm từ nút gốc, sau đó nếu dữ liệu là nhỏ hơn giá trị khóa (key), thì sẽ tìm phần tử ở cây con bên trái; nếu lớn hơn thì sẽ tìm phần tử ở cây con bên phải. Dưới đây là giải thuật cho mỗi nút:
+
+struct node* search(int data){
+   struct node *current = root;
+   printf(&quot;Truy cap cac phan tu: &quot;);
+	
+   while(current-&gt;data != data){
+	
+      if(current != NULL) {
+         printf(&quot;%d &quot;,current-&gt;data);
+			
+         //tới cây con bên trái
+         if(current-&gt;data &gt; data){
+            current = current-&gt;leftChild;
+         }//else  tới cây con bên phải
+         else {                
+            current = current-&gt;rightChild;
+         }
+			
+         //không tìm thấy
+         if(current == NULL){
+            return NULL;
+         }
+      }			
+   }
+   return current;
+}
+
+ 
+Hoạt động chèn trong cây tìm kiếm nhị phân
+Mỗi khi một phần tử được chèn: đầu tiên chúng ta cần xác định vị trí chính xác của phần tử này. Bắt đầu tìm kiếm từ nút gốc, sau đó nếu dữ liệu là nhỏ hơn giá trị khóa (key), thì tìm kiếm vị trí còn trống ở cây con bên trái và chèn dữ liệu vào đó; nếu dữ liệu là nhỏ hơn thì tìm kiếm vị trí còn sống ở cây con bên phải và chèn dữ liệu vào đó.
+
+void insert(int data){
+   struct node *tempNode = (struct node*) malloc(sizeof(struct node));
+   struct node *current;
+   struct node *parent;
+
+   tempNode-&gt;data = data;
+   tempNode-&gt;leftChild = NULL;
+   tempNode-&gt;rightChild = NULL;
+
+   //Nếu cây là trống
+   if(root == NULL){
+      root = tempNode;
+   }else {
+      current = root;
+      parent = NULL;
+
+      while(1){                
+         parent = current;
+			
+         //tới cây con bên trái
+         if(data &lt; parent-&gt;data){
+            current = current-&gt;leftChild;                
+            //chèn dữ liệu vào cây con bên trái
+				
+            if(current == NULL){
+               parent-&gt;leftChild = tempNode;
+               return;
+            }
+         }//tới cây con bên phải
+         else{
+            current = current-&gt;rightChild;
+            //chèn dữ liệu vào cây con bên phải
+            if(current == NULL){
+               parent-&gt;rightChild = tempNode;
+               return;
+            }
+         }
+      }            
+   }
+}</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Bubble_Sort -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Bubble_Sort">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Bubble_Sort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_HashTable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_HashTable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_TimKiem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#HashTable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hash Table là gì?
+Cấu trúc dữ liệu Hash Table là một cấu trúc dữ liệu lưu giữ dữ liệu theo cách thức liên hợp. Trong Hash Table, dữ liệu được lưu giữ trong định dạng mảng, trong đó các giá trị dữ liệu có giá trị chỉ mục riêng. Việc truy cập dữ liệu trở nên nhanh hơn nếu chúng ta biết chỉ mục của dữ liệu cần tìm.
+
+Do đó, với loại cấu trúc dữ liệu Hash Table này thì các hoạt động chèn và hoạt động tìm kiếm sẽ diễn ra rất nhanh, bất chấp kích cỡ của dữ liệu là bao nhiêu. Hash Table sử dụng mảng như là một kho lưu giữ trung gian và sử dụng kỹ thuật Hash để tạo chỉ mục tại nơi phần tử được chèn vào.
+
+Kỹ thuật Hashing
+Hashing là một kỹ thuật để chuyển đổi một dãy các giá trị khóa (key) vào trong một dãy các giá trị chỉ mục (index) của một mảng. Chúng ta đang sử dụng toán tử lấy phần dư để thu được một dãy các giá trị khóa</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Heap -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Heap">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Heap"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Circular_Linked_List -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Circular_Linked_List">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DS_LienKet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Circular_LinkerList"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Danh sách liên kết vòng (Circular Linked List) là gì ?
+Danh sách liên kết vòng (Circular Linked List) là một biến thể của Danh sách liên kết (Linked List), trong đó phần tử đầu tiên trỏ tới phần tử cuối cùng và phần tử cuối cùng trỏ tới phần tử đầu tiên.
+
+Cả hai loại Danh sách liên kết đơn (Singly Linked List) và Danh sách liên kết đôi (Doubly Linked List) đều có thể được tạo thành dạng Danh sách liên kết vòng. Phần dưới chúng ta sẽ tìm hiểu từng cách tạo một.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DS_LienKet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DS_LienKet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Day_Fibonacci -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Day_Fibonacci">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Day_Fabonacci"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dãy Fibonacci là gì ?
+Dãy Fibonacci tạo dãy các số bằng cách cộng hai số đằng trước. Dãy Fibonacci bắt đầu từ hai số: F0 &amp; F1. Giá trị ban đầu của F0 &amp; F1 có thể tương ứng là 0, 1 hoặc 1, 1.
+
+Điều kiện của dãy Fibonacci là:
+
+Fn = Fn-1 + Fn-2
+Ví dụ một dãy Fibonacci:
+
+F8 = 0 1 1 2 3 5 8 13
+
+Ví dụ một dãy Fibonacci khác:
+
+F8 = 1 1 2 3 5 8 13 21</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Doubly_Linked_List -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Doubly_Linked_List">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DS_LienKet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Doubly_LinkedList"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Danh sách liên kết đôi (Doubly Linked List) là gì ?
+Danh sách liên kết đôi (Doubly Linked List) là một biến thể của Danh sách liên kết (Linked List), trong đó hoạt động duyệt qua các nút có thể được thực hiện theo hai chiều: về trước và về sau một cách dễ dàng khi so sánh với Danh sách liên kết đơn. Dưới đây là một số khái niệm quan trọng cần ghi nhớ về Danh sách liên kết đôi.
+
+Link: mỗi link của một Danh sách liên kết có thể lưu giữ một dữ liệu và được gọi là một phần tử.
+
+Next: mỗi link của một Danh sách liên kết có thể chứa một link tới next link và được gọi là Next.
+
+Prev: mỗi link của một Danh sách liên kết có thể chứa một link tới previous link và được gọi là Prev.
+
+First và Last: một Danh sách liên kết chứa link kết nối tới first link được gọi là First và tới last link được gọi là Last.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DuyetCay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DuyetCay">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DuyetCAy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duyệt cây là gì ?
+Duyệt cây là một tiến trình để truy cập tất cả các nút của một cây và cũng có thể in các giá trị của các nút này. Bởi vì tất cả các nút được kết nối thông qua các cạnh (hoặc các link), nên chúng ta luôn luôn bắt đầu truy cập từ nút gốc. Do đó, chúng ta không thể truy cập ngẫu nhiên bất kỳ nút nào trong cây. Có ba phương thức mà chúng ta có thể sử dụng để duyệt một cây:
+
+Duyệt tiền thứ tự (Pre-order Traversal)
+Duyệt trung thứ tự (In-order Traversal)
+Duyệt hậu thứ tự (Post-order Traversal)
+Nói chung, chúng ta duyệt một cây để tìm kiếm hay là để xác định vị trí phần tử hoặc khóa đã cho trong cây hoặc là để in tất cả giá trị mà cây đó chứa.
+
+Duyệt trung thứ tự trong cây nhị phân
+Trong cách duyệt này, cây con bên trái được truy cập đầu tiên, sau đó là nút gốc và sau đó là cây con bên phải. Bạn nên luôn luôn ghi nhớ rằng mỗi nút đều có thể biểu diễn một cây con.
+
+Nếu một cây nhị phân được duyệt trung thứ tự, kết quả tạo ra sẽ là các giá trị khóa được sắp xếp theo thứ tự tăng dần.
+
+Giải thuật cho cách duyệt trung thứ tự
+Duyệt cho tới khi tất cả các nút đều được duyệt:
+Bước 1: Duyệt các cây con bên trái một cách đệ qui
+Bước 2: Truy cập nút gốc
+Bước 3: Duyệt các cây con bên phải một cách đệ qui</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ChiaDeTri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ChiaDeTri">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ChiaDeTri"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_MasterTheorem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_MasterTheorem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_DinhLyTho"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật Định lý thợ (Master Theorem) là gì ?
+Chúng ta sử dụng Định lý thợ (Master Theorem) để giải các công thức đệ quy dạng sau một cách hiệu quả :
+
+T(n) =aT(n/b) + c.n^k trong đó a&gt;=1 , b&gt;1
+
+Bài toán ban đầu được chia thành a bài toán con có kích thước mỗi bài là n/b, chi phí để tổng hợp các bài toán con là f(n).
+
+Ví dụ : Thuật toán sắp xếp trộn chia thành 2 bài toán con , kích thước n/2. Chi phí tổng hợp 2 bài toán con là O(n).
+
+Định lý thợ
+a&gt;=1, b&gt;1, c, k là các hằng số. T(n) định nghĩa đệ quy trên các tham số không âm
+
+T(n) = aT(n/b) + c.n^k + Nếu a&gt; b^k thì T(n) =O(n^ (logab)) + Nếu a= b^k thì T(n)=O(n^k.lgn) + Nếu a&lt; b^k thì T(n) = O(n^k)
+
+Chú ý: Không phải trường hợp nào cũng áp dụng được định lý thợ
+
+VD : T(n) = 2T(n/2) +nlogn a =2, b =2, nhưng không xác định được số nguyên k</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_QuyHoachDong -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_QuyHoachDong">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_QuyHoachDong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ThamLAm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ThamLAm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ThamLam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật tham lam là gì ?
+Tham lam (hay tham ăn) là một trong những phương pháp phổ biến nhất để thiết kế giải thuật. Nếu bạn đã đọc truyện dân gian thì sẽ có câu chuyện như thế này: trên một mâm cỗ có nhiều món ăn, món nào ngon nhất ta sẽ ăn trước, ăn hết món đó ta sẽ chuyển sang món ngon thứ hai, và chuyển tiếp sang món thứ ba, …
+
+Rất nhiều giải thuật nổi tiếng được thiết kế dựa trên ý tưởng tham lam, ví dụ như giải thuật cây khung nhỏ nhất của Dijkstra, giải thuật cây khung nhỏ nhất của Kruskal, …
+
+Giải thuật tham lam (Greedy Algorithm) là giải thuật tối ưu hóa tổ hợp. Giải thuật tìm kiếm, lựa chọn giải pháp tối ưu địa phương ở mỗi bước với hi vọng tìm được giải pháp tối ưu toàn cục.
+
+Giải thuật tham lam lựa chọn giải pháp nào được cho là tốt nhất ở thời điểm hiện tại và sau đó giải bài toán con nảy sinh từ việc thực hiện lựa chọn đó. Lựa chọn của giải thuật tham lam có thể phụ thuộc vào lựa chọn trước đó. Việc quyết định sớm và thay đổi hướng đi của giải thuật cùng với việc không bao giờ xét lại các quyết định cũ sẽ dẫn đến kết quả là giải thuật này không tối ưu để tìm giải pháp toàn cục.
+
+Bạn theo dõi một bài toán đơn giản dưới đây để thấy cách thực hiện giải thuật tham lam và vì sao lại có thể nói rằng giải thuật này là không tối ưu.
+
+Bài toán đếm số đồng tiền
+Yêu cầu là hãy lựa chọn số lượng đồng tiền nhỏ nhất có thể sao cho tổng mệnh giá của các đồng tiền này bằng với một lượng tiền cho trước.
+
+Nếu tiền đồng có các mệnh giá lần lượt là 1, 2, 5, và 10 xu và lượng tiền cho trước là 18 xu thì giải thuật tham lam thực hiện như sau:
+
+Bước 1: Chọn đồng 10 xu, do đó sẽ còn 18 – 10 = 8 xu.
+
+Bước 2: Chọn đồng 5 xu, do đó sẽ còn là 3 xu.
+
+Bước 3: Chọn đồng 2 xu, còn lại là 1 xu.
+
+Bước 4: Cuối cùng chọn đồng 1 xu và giải xong bài toán.
+
+Bạn thấy rằng cách làm trên là khá ổn, và số lượng đồng tiền cần phải lựa chọn là 4 đồng tiền. Nhưng nếu chúng ta thay đổi bài toán trên một chút thì cũng hướng tiếp cận như trên có thể sẽ không đem lại cùng kết quả tối ưu.
+
+Chẳng hạn, một hệ thống tiền tệ khác có các đồng tiền có mệnh giá lần lượt là 1, 7 và 10 xu và lượng tiền cho trước ở đây thay đổi thành 15 xu thì theo giải thuật tham lam thì số đồng tiền cần chọn sẽ nhiều hơn 4. Với giải thuật tham lam thì: 10 + 1 + 1 +1 + 1 + 1, vậy tổng cộng là 6 đồng tiền. Trong khi cùng bài toán như trên có thể được xử lý bằng việc chỉ chọn 3 đồng tiền (7 + 7 +1).
+
+Do đó chúng ta có thể kết luận rằng, giải thuật tham lam tìm kiếm giải pháp tôi ưu ở mỗi bước nhưng lại có thể thất bại trong việc tìm ra giải pháp tối ưu toàn cục.
+
+Ví dụ áp dụng giải thuật tham lam
+Có khá nhiều giải thuật nổi tiếng được thiết kế dựa trên tư tưởng của giải thuật tham lam. Dưới đây là một trong số các giải thuật này:
+
+Bài toán hành trình người bán hàng
+Giải thuật cây khung nhỏ nhất của Prim
+Giải thuật cây khung nhỏ nhất của Kruskal
+Giải thuật cây khung nhỏ nhất của Dijkstra
+Bài toán xếp lịch công việc
+Bài toán xếp ba lô</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_TiemCan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_TiemCan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_TiemCan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_TimKiem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_TimKiem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Insertion_Sort -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Insertion_Sort">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Insertion_Sort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GioiThieu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cấu trúc dữ liệu (Data Structure) là gì ?
+Cấu trúc dữ liệu là cách lưu trữ, tổ chức dữ liệu có thứ tự, có hệ thống để dữ liệu có thể được sử dụng một cách hiệu quả.
+
+Dưới đây là hai khái niệm nền tảng hình thành nên một cấu trúc dữ liệu:
+
+Interface: Mỗi cấu trúc dữ liệu có một Interface. Interface biểu diễn một tập hợp các phép tính mà một cấu trúc dữ liệu hỗ trợ. Một Interface chỉ cung cấp danh sách các phép tính được hỗ trợ, các loại tham số mà chúng có thể chấp nhận và kiểu trả về của các phép tính này.
+
+Implementation (có thể hiểu là sự triển khai): Cung cấp sự biểu diễn nội bộ của một cấu trúc dữ liệu. Implementation cũng cung cấp phần định nghĩa của giải thuật được sử dụng trong các phép tính của cấu trúc dữ liệu.
+
+Đặc điểm của một Cấu trúc dữ liệu
+Chính xác: Sự triển khai của Cấu trúc dữ liệu nên triển khai Interface của nó một cách chính xác.
+
+Độ phức tạp về thời gian (Time Complexity): Thời gian chạy hoặc thời gian thực thi của các phép tính của cấu trúc dữ liệu phải là nhỏ nhất có thể.
+
+Độ phức tạp về bộ nhớ (Space Complexity): Sự sử dụng bộ nhớ của mỗi phép tính của cấu trúc dữ liệu nên là nhỏ nhất có thể.
+
+
+ 
+Tại sao Cấu trúc dữ liệu là cần thiết ?
+Ngày nay, các ứng dụng ngày càng phức tạp và lượng dữ liệu ngày càng lớn với nhiều kiểu đa dạng. Việc này làm xuất hiện 3 vấn đề lớn mà mỗi lập trình viên phải đối mặt:
+
+Tìm kiếm dữ liệu: Giả sử có 1 triệu hàng hóa được lưu giữ vào trong kho hàng hóa. Và giả sử có một ứng dụng cần để tìm kiếm một hàng hóa. Thì mỗi khi thực hiện tìm kiếm, ứng dụng này sẽ phải tìm kiếm 1 hàng hóa trong 1 triệu hàng hóa. Khi dữ liệu tăng lên thì việc tìm kiếm sẽ càng trở lên chậm và tốn kém hơn.
+
+Tốc độ bộ vi xử lý: Mặc dù bộ vi xử lý có tốc độ rất cao, tuy nhiên nó cũng có giới hạn và khi lượng dữ liệu lên tới hàng tỉ bản ghi thì tốc độ xử lý cũng sẽ không còn được nhanh nữa.
+
+Đa yêu cầu: Khi hàng nghìn người dùng cùng thực hiện một phép tính tìm kiếm trên một Web Server thì cho dù Web Server đó có nhanh đến mấy thì việc phải xử lý hàng nghìn phép tính cùng một lúc là thực sự rất khó.
+
+Để xử lý các vấn đề trên, các cấu trúc dữ liệu là một giải pháp tuyệt vời. Dữ liệu có thể được tổ chức trong cấu trúc dữ liệu theo một cách để khi thực hiện tìm kiếm một phần tử nào đó thì dữ liệu yêu cầu sẽ được tìm thấy ngay lập tức.
+
+Độ phức tạp thời gian thực thi trong cấu trúc dữ liệu và giải thuật
+Có 3 trường hợp thường được sử dụng để so sánh thời gian thực thi của các cấu trúc dữ liệu khác nhau:
+
+Trường hợp xấu nhất (Worst Case): là tình huống mà một phép tính của cấu trúc dữ liệu nào đó tốn thời gian tối đa (thời gian dài nhất). Ví dụ với ba số 1, 2, 3 thì nếu sắp xếp theo thứ tự giảm dần thì thời gian thực thi sẽ là dài nhất (và đây là trường hợp xấu nhất); còn nếu sắp xếp theo thứ tự tăng dần thì thời gian thực thi sẽ là ngắn nhất (và đây là trường hợp tốt nhất).
+
+Trường hợp trung bình (Average Case): miêu tả thời gian thực thi trung bình một phép tính của một cấu trúc dữ liệu.
+
+Trường hợp tốt nhất (Best Case): là tình huống mà thời gian thực thi một phép tính của một cấu trúc dữ liệu là ít nhất. Ví dụ như trên.
+
+
+ 
+Thuật ngữ cơ bản trong Cấu trúc dữ liệu
+Dữ liệu: Dữ liệu là các giá trị hoặc là tập hợp các giá trị.
+
+Phần tử dữ liệu: Phần tử dữ liệu là một đơn vị đơn lẻ của giá trị.
+
+Các phần tử nhóm: Phần tử dữ liệu mà được chia thành các phần tử con thì được gọi là các phần tử nhóm.
+
+Các phần tử cơ bản: Phần tử dữ liệu mà không thể bị chia nhỏ thành các phần tử con thì gọi là các phần tử cơ bản.
+
+Thuộc tính và Thực thể: Một thực thể là cái mà chứa một vài thuộc tính nào đó, và các thuộc tính này có thể được gán các giá trị.
+
+Tập hợp thực thể: Các thực thể mà có các thuộc tính tương tự nhau thì cấu thành một tập hợp thực thể.
+
+Trường: Trường là một đơn vị thông tin cơ bản biểu diễn một thuộc tính của một thực thể.
+
+Bản ghi: Bản ghi là một tập hợp các giá trị trường của một thực thể đã cho.
+
+File: Là một tập hợp các bản ghi của các thực thể trong một tập hợp thực thể đã cho.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_DoThi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_DoThi">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_DoThi"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_Tree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_Tree">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_Tree"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_DeQuy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_DeQuy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_DEQuy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đệ qui (Recursion) là gì ?
+Một số ngôn ngữ lập trình cho phép việc một module hoặc một hàm được gọi tới chính nó. Kỹ thuật này được gọi là Đệ qui (Recursion). Trong đệ qui, một hàm a có thể: gọi trực tiếp chính hàm a này hoặc gọi một hàm b mà trả về lời gọi tới hàm a ban đầu. Hàm a được gọi là hàm đệ qui.
+
+Ví dụ: một hàm gọi chính nó
+
+int function(int value) {
+   if(value &lt; 1)
+      return;
+   function(value - 1);
+	
+   printf(&quot;%d &quot;,value);   
+}
+Ví dụ: một hàm mà gọi tới hàm khác mà trả về lời gọi tới hàm ban đầu
+
+int function(int value) {
+   if(value &lt; 1)
+      return;
+   function(value - 1);
+	
+   printf(&quot;%d &quot;,value);   
+}
+
+ 
+Đặc điểm của hàm đệ qui
+Một hàm đệ qui có thể tiếp tục diễn ra vô số lần giống như một vòng lặp vô hạn. Để tránh điều này, bạn phải ghi nhớ hai thuộc tính sau của hàm đệ qui:
+
+Điều kiện cơ bản: phải có ít nhất một điều kiện để khi mà gặp điều kiện này thì việc gọi chính hàm đó (gọi đệ qui) sẽ dừng lại.
+
+Tiệm cận: mỗi khi hàm đệ qui được gọi thì nó càng tiệm cận tới điều kiện cơ bản.
+
+Sự triển khai hàm đệ qui
+Nhiều ngôn ngữ lập trình triển khai sự đệ qui theo cách thức của các ngăn xếp (stack). Nói chung, mỗi khi một hàm (hàm gọi – caller) gọi hàm khác (hàm được gọi – callee) hoặc gọi chính nó (callee), thì hàm caller truyền điều khiển thực thi tới callee. Tiến trình truyền này cũng có thể bao gồm một số dữ liệu từ caller tới callee.
+
+So sánh đệ qui và vòng lặp
+Ai đó có thể nói rằng tại sao lại sử dụng đệ qui trong khi sử dụng vòng lặp cũng có thể làm được các tác vụ tương tự. Lý do đầu tiên là đệ qui làm cho chương trình dễ đọc hơn và với các hệ thống CPU cải tiến ngày nay thì đệ qui là hiệu quả hơn rất nhiều khi so với các vòng lặp.
+
+Độ phức tạp thời gian (Time complexity) của hàm đệ qui
+Với vòng lặp, chúng ta lấy số vòng lặp để tính độ phức tạp thời gian. Tương tự với đệ qui, giả sử mọi thứ là hằng số, chúng ta tính thời gian một lời gọi đệ qui được tạo ra. Một lời gọi được tạo ra tới một hàm sẽ là Ο(1), Do đó với n là thời gian một lời gọi đệ qui được tạo ra thì độ phức tạp thời gian hàm đệ qui sẽ là Ο(n).
+
+Độ phức tạp bộ nhớ (Space complexity) của hàm đệ qui
+Độ phức tạp bộ nhớ được ước lượng dựa vào lượng bộ nhớ cần thêm cho một module được thực thi. Với vòng lặp, trình biên dịch hầu như không cần thêm bộ nhớ. Trình biên dịch sẽ tự cập nhật giá trị của biến được sử dụng ngay trong vòng lặp. Nhưng với đệ qui, hệ thống cần lưu giữ các bản ghi động mỗi khi một lời gọi đệ qui được tạo. Do đó có thể nói rằng, độ phức tạp bộ nhớ của hàm đệ qui là cao hơn so với vòng lặp.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_GTSX -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_GTSX">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNien_GTSapXep"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sắp xếp là sắp xếp dữ liệu theo một định dạng cụ thể. Trong khoa học máy tính, giải thuật sắp xếp xác định cách để sắp xếp dữ liệu theo một thứ tự nào đó. Sắp xếp theo thứ tự ở đây là sắp xếp theo thứ tự dạng số hoặc thứ tự dạng chữ cái như trong từ điển.
+
+Tính quan trọng của việc sắp xếp dữ liệu nằm ở chỗ: việc tìm kiếm dữ liệu có thể được tối ưu nếu dữ liệu được sắp xếp theo một thứ tự nào đó (tăng hoặc giảm). Sắp xếp cũng được sử dụng để biểu diễn dữ liệu trong một định dạng dễ đọc hơn.
+
+Giải thuật sắp xếp In-place và Not-in-place
+Các giải thuật sắp xếp có thể cần thêm một số bộ nhớ phụ để so sánh và bộ nhớ tạm để lưu giữ một số phần tử dữ liệu.
+
+Những giải thuật mà không yêu cầu thêm bất kỳ bộ nhớ phụ và việc sắp xếp được tiến hành trong chính phần bộ nhớ đã khai báo trước đó (ví dụ trong một mảng chẳng hạn) thì được gọi là in-place sorting. Ví dụ cho loại giải thuật sắp xếp này là giải thuật sắp xếp nổi bọt (bubble sorting).
+
+Nhưng trong một số giải thuật sắp xếp, chương trình cần thêm lượng bộ nhớ mà có thể lớn hơn hoặc bằng với số phần tử đang được sắp xếp. Các giải thuật này được gọi là not-in-place sorting. Ví dụ cho loại giải thuật này là sắp xếp trộn (merge sort).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_GiaiThuat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_GiaiThuat">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNienGT"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Linked_List -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Linked_List">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DS_LienKet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Linked_List"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Merge_Sort -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Merge_Sort">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Merge_Sort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NganSep_HangDoi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NganSep_HangDoi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NhiPhan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NhiPhan">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_TimKiem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NhiPhan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NoiSuy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NoiSuy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_TimKiem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NoiSuy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Queue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Queue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NganSep_HangDoi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Queue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Quick_Sort -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Quick_Sort">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Quick_Sort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Selection_Sort -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Selection_Sort">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Selection_Sort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Shell_Sort -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Shell_Sort">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_SapXep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Shell_Sort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Slay_splayTree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Slay_splayTree">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Slay-splayTree"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cây SPLAY là gì ?
+Là cây tìm kiếm nhị phân
+
+- Mỗi khi truy cập vào mộ nút trên cây( thêm hoặc xoá) thì nút mới truy nhập sẽ được tự động chuyển thành gốc của cây mới - Các nút được truy cập thường xuyên sẽ ở gần gốc - Để dịch chuyển nút ta dung các phép xoay giống với trong AVL tree - Các nút nằm trên đường đi từ gốc tới nút mới truy cập sẽ chịu ảnh hưởng của các phép xoay
+
+Kỹ thuật quay cây SPLAY
+Có 2 phép quay trong cây SPLAY , đó là :
+
+Kỹ thuật xoay đơn
+Kỹ thuật xoay kép
+Kỹ thuật xoay đơn cây SPLAY
+xoay đơn : Nút cha xuống thấp 1 mức và nút con lên 1 mức, chúng ta có thể thực hiện kỹ thuật xoay đơn như sau:
+
+Xoay đơn cây SPLAY
+Kỹ thuật xoay kép cây SPLAY
+Xoay kép : gồm 2 phép xoay đơn lien tiếp. Nút tang lên 1 mức và các nút còn lại lên hoặc giảm xuống nhiều nhất 1 mức , chúng ta thực hiện kỹ thuật xoay kép như sau:
+
+Xoay đơn cây SPLAY
+Ý tưởng mới :tại mỗi bước ta di chuyển nút liền 2 mức Xét các nút trên đường đi từ gốc đến nút mới truy nhập - nếu ta di chuyển trái gọi là Zig - Ngược lại, di chuyển phải gọi là Zag
+
+
+ 
+Dịch chuyển : Nếu nút đang xét nằm ở mức sâu hơn hoặc bằng 2 ta dịch chuyển 2 mức mỗi lần
+
+Xoay kép cây SPLAY
+Nếu nút ở mức 1: ta chỉ dịch chuyển 1 mức
+
+Xoay kép cây SPLAY
+Nhận xét cây splay:
+- Cây không cân bằng (thường bị lệch) - Các thao tác có thời gian thực hiện khác nhau từ O(1) tới O(n) - Thời gian thực hiện trung bình của 1 thao tác là O(logn) - Thực hiện giống như cây AVL nhưng không cần quản lý thong tin về trạng thái cân bằng của các nút</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#SpanningTree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#SpanningTree">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#SpanningTree"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Stack -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Stack">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NganSep_HangDoi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Stack"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuRong -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuRong">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuRong"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuSau -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuSau">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuSau"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TuyenTinh -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TuyenTinh">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat_TimKiem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TuyenTinh"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#AVL_Tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#AVL_Tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Array -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Array"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#BT_TowerofHN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#BT_TowerofHN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Back_Tracking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Back_Tracking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Binary_SearchTree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Binary_SearchTree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Bubble_Sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Bubble_Sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Heap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Heap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CauTrucDuLieu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CauTrucDuLieu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Circular_LinkerList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Circular_LinkerList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DanhSachLienKet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DanhSachLienKet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DanhSachLienKet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Day_Fabonacci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Day_Fabonacci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Doubly_LinkedList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Doubly_LinkedList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DanhSachLienKet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DuyetCAy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DuyetCAy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ChiaDeTri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ChiaDeTri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_DinhLyTho -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_DinhLyTho">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_QuyHoachDong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_QuyHoachDong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ThamLam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ThamLam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_TiemCan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_TiemCan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GioiThieu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GioiThieu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CauTrucDuLieu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#HashTable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#HashTable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanTimKiem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Insertion_Sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Insertion_Sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_DoThi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_DoThi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_Tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_Tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_DEQuy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_DEQuy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DeQuy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNienCTDL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNienCTDL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GioiThieu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNienGT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNienGT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GiaiThuat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNien_GTSapXep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNien_GTSapXep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Linked_List -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Linked_List">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#DanhSachLienKet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Merge_Sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Merge_Sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanTimKiem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanTimKiem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NganSep_HangDoi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NganSep_HangDoi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NhiPhan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NhiPhan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanTimKiem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NoiSuy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NoiSuy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanTimKiem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Queue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Queue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NganSep_HangDoi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Quick_Sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Quick_Sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Selection_Sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Selection_Sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Shell_Sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Shell_Sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanSapXep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Slay-splayTree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Slay-splayTree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#SpanningTree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#SpanningTree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Tree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Stack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Stack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NganSep_HangDoi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuRong -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuRong">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuSau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuSau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_DoThi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TuyenTinh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TuyenTinh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#MotSoThuatToanTimKiem"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#AVL_Tree">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cây AVL là gì ?
+Điều gì xảy ra nếu dữ liệu nhập vào cây tìm kiếm nhị phân (BST) là ở dạng đã được sắp thứ tự (tăng dần hoặc giảm dần).
+
+Cây AVL (viết tắt của tên các nhà phát minh Adelson, Velski và Landis) là cây tìm kiếm nhị phân có độ cân bằng cao. Cây AVL kiểm tra độ cao của các cây con bên trái và cây con bên phải và bảo đảm rằng hiệu số giữa chúng là không lớn hơn 1. Hiệu số này được gọi là Balance Factor (Nhân tố cân bằng).
+
+Kỹ thuật quay cây AVL
+Để làm cho cây tự cân bằng, một cây AVL có thể thực hiện 4 loại kỹ thuật quay sau:
+
+Kỹ thuật quay trái
+Kỹ thuật quay phải
+Kỹ thuật quay trái-phải
+Kỹ thuật quay phải-trái</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#BT_TowerofHN">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tháp Hà Nội (Tower of Hanoi) là gì ?
+Bài toán Tháp Hà Nội (Tower of Hanoi) là một trò chơi toán học bao gồm 3 cột và với số đĩa nhiều hơn 1.
+
+Các đĩa có kích cỡ khác nhau và xếp theo tự tự tăng dần về kích cỡ từ trên xuống: đĩa nhỏ hơn ở trên đĩa lớn hơn. Với số đĩa khác nhau thì ta có các bài toán Tháp Hà Nội (Tower of Hanoi) khác nhau, tuy nhiên lời giải cho các bài toán này là tương tự nhau. Lời giải tối ưu cho bài toán Tháp Hà Nội (Tower of Hanoi) là khi trò chơi chỉ có 3 cọc. Với số cọc lớn hơn thì lời giải bài toán vẫn chưa được khẳng định.
+
+Qui tắc trò chơi toán học Tháp Hà Nội (Tower of Hanoi)
+Nhiệm vụ của trò chơi là di chuyển các đĩa có kích cỡ khác nhau sang cột khác sao cho vẫn đảm bảo thứ tự ban đầu của các đĩa: đĩa nhỏ nằm trên đĩa lớn. Dưới đây là một số qui tắc cho trò chơi toán học Tháp Hà Nội (Tower of Hanoi):
+
+Mỗi lần chỉ có thể di chuyển một đĩa từ cột này sang cột khác.
+Chỉ được di chuyển đĩa nằm trên cùng (không được di chuyển các đĩa nằm giữa).
+Đĩa có kích thước lớn hơn không thể được đặt trên đĩa có kích thước nhỏ hơn.
+
+Bài toán Tháp Hà Nội (Tower of Hanoi) với số đĩa là n có thể được giải với số bước tối thiểu là 2n−1. Do đó, với trường hợp 3 đĩa, bài toán Tháp Hà Nội (Tower of Hanoi) có thể được giải sau 23−1 = 7 bước.
+
+Giải thuật cho bài toán Tháp Hà Nội (Tower of Hanoi)
+Để viết giải thuật cho trò chơi toán học Tháp Hà Nội (Tower of Hanoi), đầu tiên chúng ta cần tìm hiểu cách giải bài toán với số đĩa là 1 và 2. Chúng ta gán 3 cột với các tên là:
+
+cotNguon: cột ban đầu chứa các đĩa
+
+cotDich: cột cần di chuyển các đĩa tới
+
+cotTrungGian: cột trung gian có mục đích làm trung gian trong quá trình di chuyển đĩa
+
+Nếu chỉ có 1 đĩa, chúng ta chỉ cần di chuyển từ cotNguon tới cotDich.
+
+Nếu có 2 đĩa:
+
+Đầu tiên chúng ta di chuyển đĩa trên cùng (đĩa nhỏ nhất) tới cotTrungGian.
+Sau đó chúng ta di chuyển đĩa ở dưới cùng (đĩa to hơn) tới cotDich.
+Và cuối cùng di chuyển đĩa nhỏ nhất từ cotTrungGian về cotDich.
+
+Từ hai giải thuật phần giải thuật trên chúng ta sẽ có giải thuật cho bài toán Tháp Hà Nội (Tower of Hanoi) cho 3 đĩa trở lên. Chúng ta chia ngăn xếp các đĩa thành hai phần: đĩa thứ lớn nhất (đĩa thứ n) là phần thứ nhất và (n-1) đĩa còn lại là phần thứ hai.
+
+Mục đích của chúng ta là di chuyển đĩa thứ n từ cotNguon tới cotDich và sau đó đặt tất cả (n-1) đĩa còn lại lên trên nó. Bây giờ chúng ta có thể tưởng tượng ra cách giải bài toán trên dựa vào đệ qui theo các bước sau:
+
+Bước 1: Di chuyển n-1 đĩa từ cotNguon tới cotTrungGian
+Bước 2: Di chuyển đĩa thứ n từ cotNguon tới cotDich
+Bước 3: Di chuyển n-1 đĩa từ cotTrungGian về cotDich
+
+
+
+Giải thuật đệ qui cho bài toán Tháp Hà Nội (Tower of Hanoi) là:
+
+Bắt đầu giải thuật Tháp Hà nội Hanoi(disk, cotNguon, cotDich, cotTrungGian)
+
+   IF disk == 0, thì
+      di chuyển đĩa từ cotNguon tới cotDich             
+   ELSE
+      Hanoi(disk - 1, cotNguon, cotTrungGian, cotDich)     // Bước 1
+      di chuyển đĩa từ cotNguon tới cotDich           // Bước 2
+      Hanoi(disk - 1, cotTrungGian, cotDich, cotNguon)     // Bước 3
+   Kết thúc IF
+   
+Kết thúc giải thuật</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Back_Tracking">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thuật toán quay lui (Back-tracking algorithm) là gì ?
+Thuật toán quay lui dùng để giải các bài toán liệt kê cấu hình
+
+Mỗi cấu hình được xây dựng bằng cách xây dựng từng phần tử, mỗi phần tử được chon bằng cách thử tất cả các khả năng
+
+Bài toán minh hoạ
+Ví dụ điển hình là thuật toán xếp hậu: đặt lần lượt các quân hậu lên bàn cờ sao cho quân hậu đặt sau không ăn được quan đã đặt trước đó.
+
+Giải thuật sắp xếp nhanh (Quick Sort)
+Dead end: trạng thái chưa kết thúc, nhưng ta không thể đặt thêm được một quân hậu nào nữa.
+
+Khi rơi vào trạng thái dead end ta phải tiến hành quay lui (backtrack) lại lựa chọn gần nhất để thử một khả năng có thể khác.
+
+Giải thuật sắp xếp nhanh (Quick Sort)
+Thuật toán
+Thử tìm kiếm lời giải đày đủ cho bài toán từ việc xây dựng lời giải bộ phận, trong đó lời giải bộ phận phải luôn phù hợp với yêu cầu bài toán.
+
+Trong quá trình thực hiện, thuật toán mở rộng dần lời giải bộ phận. Nếu việc mở rộng khiến lời giải bộ phận vi phạm yêu cầu bài toán thì tiến hành quay lui, loại bỏ sửa đổi gần nhất và thử một khả năng xây dựng lời giải bộ phận có thể khác.
+
+Giải thuật bài toán 8 con hậu
+Thử lần lượt từng vị trí hàng Nếu vị trí thử không bị con hậu nào tấn công thì con hậu thứ 8 là an toàn Đệ quy với con hậu tiếp theo Xoá để tiếp tục thử vị trí [row+1,column]</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Bubble_Sort">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sắp xếp nổi bọt (Bubble Sort) là gì ?
+Sắp xếp nổi bọt là một giải thuật sắp xếp đơn giản. Giải thuật sắp xếp này được tiến hành dựa trên việc so sánh cặp phần tử liền kề nhau và tráo đổi thứ tự nếu chúng không theo thứ tự.
+
+Giải thuật này không thích hợp sử dụng với các tập dữ liệu lớn khi mà độ phức tạp trường hợp xấu nhất và trường hợp trung bình là Ο(n2) với n là số phần tử.
+
+Giải thuật sắp xếp nổi bọt là giải thuật chậm nhất trong số các giải thuật sắp xếp cơ bản. Giải thuật này còn chậm hơn giải thuật đổi chỗ trực tiếp mặc dù số lần so sánh bằng nhau, nhưng do đổi chỗ hai phần tử kề nhau nên số lần đổi chỗ nhiều hơn.
+
+Giải thuật cho sắp xếp nổi bọt (Bubble Sort)
+Giả sử list là một mảng có n phần tử. Tiếp đó giả sử hàm swap để tráo đổi giá trị của các phần tử trong mảng (đây là giả sử, tất nhiên là bạn có thể viết code riêng cho hàm swap này).
+
+Bắt đầu giải thuật BubbleSort(list)
+
+   for tất cả phần tử trong list
+      if list[i] &gt; list[i+1]
+         swap(list[i], list[i+1])
+      kết thúc if
+   kết thúc for
+   
+   return list
+   
+Kết thúc BubbleSort
+Giải thuật mẫu cho sắp xếp nổi bọt (Bubble Sort)
+Chúng ta thấy rằng giải thuật sắp xếp nổi bọt so sánh mỗi cặp phần tử trong mảng trừ khi cả toàn bộ mảng đó đã hoàn toàn được sắp xếp theo thứ tự tăng dần. Điều này có thể làm tăng độ phức tạp, tức là tăng các thao tác so sánh và tráo đổi không cần thiết nếu như mảng này không cần sự tráo đổi nào nữa khi tất cả các phần tử đã được sắp xếp theo thứ tự tăng dần rồi.
+
+Để tránh việc này xảy ra, chúng ta có thể sử dụng một biến swapped chẳng hạn để giúp chúng ta biết có cần thực hiện thao tác tráo đổi thứ tự hay không. Nếu không cần thiết thì thoát khỏi vòng lặp.
+
+Bạn theo dõi phần giải thuật mẫu minh họa sau:
+
+Bắt đầu hàm bubbleSort( list : mảng các phần tử )
+
+   loop = list.count;
+   
+   for i = 0 tới loop-1 thực hiện:
+      swapped = false
+		
+      for j = 0 tới loop-1 thực hiện:
+      
+         /* so sánh các phần tử cạnh nhau */   
+         if list[j] &gt; list[j+1] then
+            /* tráo đổi chúng */
+            swap( list[j], list[j+1] )		 
+            swapped = true
+         kết thúc if
+         
+      kết thúc for
+      
+      /*Nếu không cần tráo đổi phần tử nào nữa thì 
+      tức là mảng đã được sắp xếp. Thoát khỏi vòng lặp.*/
+      
+      if(not swapped) then
+         break
+      kết thúc if
+      
+   kết thúc for
+   
+Kết thúc hàm return list</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#CTDL_Heap">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cấu trúc dữ liệu Heap là gì ?
+Cấu trúc dữ liệu Heap là một trường hợp đặc biệt của cấu trúc dữ liệu cây nhị phân cân bằng, trong đó khóa của nút gốc được so sánh với các con của nó và được sắp xếp một cách phù hợp. Nếu α có nút con β thì:
+
+key(α) ≥ key(β)
+
+Khi giá trị của nút cha lớn hơn giá trị của nút con, thì thuộc tính này tạo ra một Max Heap. Dựa trên tiêu chí này, một Heap có thể là một trong hai kiểu sau:
+
+Với dữ liệu đầy vào → 35 33 42 10 14 19 27 44 26 31
+Min-Heap: ở đây giá trị của nút gốc là nhỏ hơn hoặc bằng các giá trị của các nút con.
+Max-Heap: ở đây giá trị của nút gốc là lớn hơn hoặc bằng giá trị của các nút con.
+
+Giải thuật xây dựng Max Heap
+Chúng ta sẽ sử dụng cùng ví dụ trên để minh họa cách tạo một Max Heap. Phương thức để xây dựng Min Heap là tương tự.
+
+Chúng ta sẽ suy ra một giải thuật cho Max Heap bằng việc chèn một phần tử tại một thời điểm. Tại bất cứ thời điểm nào, Heap đều phải duy trì (tuân theo) thuộc tính của nó. Trong quá trình chèn, chúng ta cũng giả sử rằng chúng ta đang chèn một nút vào trong HEAPIFIED Tree.
+
+Bước 1: Tạo một nút mới tại vị trí cuối cùng của Heap.
+Bước 2: Gán giá trị mới cho nút này.
+Bước 3: So sánh giá trị của nút con với giá trị cha.
+Bước 4: Nếu giá trị của cha là nhỏ hơn con thì tráo đổi chúng.
+Bước 5: Lặp lại bước 3 và 4 cho tới khi vẫn duy trì thuộc tính của Heap.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_ChiaDeTri">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật chia để trị (Divide and Conquer)là gì ?
+Phương pháp chia để trị (Divide and Conquer) là một phương pháp quan trọng trong việc thiết kế các giải thuật. Ý tưởng của phương pháp này khá đơn giản và rất dễ hiểu: Khi cần giải quyết một bài toán, ta sẽ tiến hành chia bài toán đó thành các bài toán con nhỏ hơn. Tiếp tục chia cho đến khi các bài toán nhỏ này không thể chia thêm nữa, khi đó ta sẽ giải quyết các bài toán nhỏ nhất này và cuối cùng kết hợp giải pháp của tất cả các bài toán nhỏ để tìm ra giải pháp của bài toán ban đầu.
+
+bạn có thể hiểu giải thuật chia để trị (Divide and Conquer) qua 3 tiến trình sau:
+
+Tiến trình 1: Chia nhỏ (Divide/Break)
+Trong bước này, chúng ta chia bài toán ban đầu thành các bài toán con. Mỗi bài toán con nên là một phần của bài toán ban đầu. Nói chung, bước này sử dụng phương pháp đệ qui để chia nhỏ các bài toán cho đến khi không thể chia thêm nữa. Khi đó, các bài toán con được gọi là &quot;atomic – nguyên tử&quot;, nhưng chúng vẫn biểu diễn một phần nào đó của bài toán ban đầu.
+
+Tiến trình 2: Giải bài toán con (Conquer/Solve)
+Trong bước này, các bài toán con được giải.
+Tiến trình 3: Kết hợp lời giải (Merge/Combine)
+Sau khi các bài toán con đã được giải, trong bước này chúng ta sẽ kết hợp chúng một cách đệ qui để tìm ra giải pháp cho bài toán ban đầu.
+
+Hạn chế của giải thuật chia để trị (Devide and Conquer)
+Giải thuật chia để trị tồn tại hai hạn chế, đó là:
+
+Làm thế nào để chia tách bài toán một cách hợp lý thành các bài toán con, bởi vì nếu các bài toán con được giải quyết bằng các thuật toán khác nhau thì sẽ rất phức tạp.
+
+Việc kết hợp lời giải các bài toán con được thực hiện như thế nào.
+
+Ví dụ giải thuật chia để trị
+Dưới đây là một số giải thuật được xây dựng dựa trên phương pháp chia để trị (Divide and Conquer):
+
+Giải thuật sắp xếp trộn (Merge Sort)
+Giải thuật sắp xếp nhanh (Quick Sort)
+Giải thuật tìm kiếm nhị phân (Binary Search)
+Nhân ma trận của Strassen...</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_QuyHoachDong">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật Qui hoạch động (Dynamic Programming) là gì ?
+Giải thuật Qui hoạch động (Dynamic Programming) giống như giải thuật chia để trị (Divide and Conquer) trong việc chia nhỏ bài toán thành các bài toán con nhỏ hơn và sau đó thành các bài toán con nhỏ hơn nữa có thể. Nhưng không giống chia để trị, các bài toán con này không được giải một cách độc lập. Thay vào đó, kết quả của các bài toán con này được lưu lại và được sử dụng cho các bài toán con tương tự hoặc các bài toán con gối nhau (Overlapping Sub-problems).
+
+Chúng ta sử dụng Qui hoạch động (Dynamic Programming) khi chúng ta có các bài toán mà có thể được chia thành các bài toán con tương tự nhau, để mà các kết quả của chúng có thể được tái sử dụng. Thường thì các giải thuật này được sử dụng cho tối ưu hóa. Trước khi giải bài toán con, giải thuật Qui hoạch động sẽ cố gắng kiểm tra kết quả của các bài toán con đã được giải trước đó. Các lời giải của các bài toán con sẽ được kết hợp lại để thu được lời giải tối ưu.
+
+Do đó, chúng ta có thể nói rằng:
+
+Bài toán ban đầu nên có thể được phân chia thành các bài toán con gối nhau nhỏ hơn.
+
+Lời giải tối ưu của bài toán có thể thu được bởi sử dụng lời giải tối ưu của các bài toán con.
+
+Giải thuật Qui hoạch động sử dụng phương pháp lưu trữ (Memoization) – tức là chúng ta lưu trữ lời giải của các bài toán con đã giải, và nếu sau này chúng ta cần giải lại chính bài toán đó thì chúng ta có thể lấy và sử dụng kết quả đã được tính toán.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#GT_TiemCan">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phân tích tiệm cận là gì ?
+Phân tích tiệm cận của một giải thuật là khái niệm giúp chúng ta ước lượng được thời gian chạy (Running Time) của một giải thuật. Sử dụng phân tích tiệm cận, chúng ta có thể đưa ra kết luận tốt nhất về các tình huống trường hợp tốt nhất, trường hợp trung bình, trường hợp xấu nhất của một giải thuật. Để tham khảo về các trường hợp này, bạn có thể tìm hiểu chương Cấu trúc dữ liệu là gì ?.
+
+Phân tích tiệm cận tức là tiệm cận dữ liệu đầu vào (Input), tức là nếu giải thuật không có Input thì kết luận cuỗi cùng sẽ là giải thuật sẽ chạy trong một lượng thời gian cụ thể và là hằng số. Ngoài nhân tố Input, các nhân tố khác được xem như là không đổi.
+
+Phân tích tiệm cận nói đến việc ước lượng thời gian chạy của bất kỳ phép tính nào trong các bước tính toán. Ví dụ, thời gian chạy của một phép tính nào đó được ước lượng là một hàm f(n) và với một phép tính khác là hàm g(n2). Điều này có nghĩa là thời gian chạy của phép tính đầu tiên sẽ tăng tuyến tính với sự tăng lên của n và thời gian chạy của phép tính thứ hai sẽ tăng theo hàm mũ khi n tăng lên. Tương tự, khi n là khá nhỏ thì thời gian chạy của hai phép tính là gần như nhau.
+
+Thường thì thời gian cần thiết bởi một giải thuật được chia thành 3 loại:
+
+Trường hợp tốt nhất: là thời gian nhỏ nhất cần thiết để thực thi chương trình.
+
+Trường hợp trung bình: là thời gian trung bình cần thiết để thực thi chương trình.
+
+Trường hợp xấu nhất: là thời gian tối đa cần thiết để thực thi chương trình.
+
+
+Asymptotic Notation trong Cấu trúc dữ liệu và giải thuật
+Dưới đây là các Asymptotic Notation được sử dụng phổ biến trong việc ước lượng độ phức tạp thời gian chạy của một giải thuật:
+
+Ο Notation
+
+Ω Notation
+
+θ Notation
+
+Big Oh Notation, Ο trong Cấu trúc dữ liệu và giải thuật
+Ο(n) là một cách để biểu diễn tiệm cận trên của thời gian chạy của một thuật toán. Nó ước lượng độ phức tạp thời gian trường hợp xấu nhất hay chính là lượng thời gian dài nhất cần thiết bởi một giải thuật (thực thi từ bắt đầu cho đến khi kết thúc). Đồ thị biểu diễn như sau:
+
+Big O Notation
+Ví dụ, gọi f(n) và g(n) là các hàm không giảm định nghĩa trên các số nguyên dương (tất cả các hàm thời gian đều thỏa mãn các điều kiện này):
+
+Ο(f(n)) = { g(n) : nếu tồn tại c &gt; 0 và n0 sao cho g(n) ≤ c.f(n) với mọi n &gt; n0. }
+Omega Notation, Ω trong Cấu trúc dữ liệu và giải thuật
+The Ω(n) là một cách để biểu diễn tiệm cận dưới của thời gian chạy của một giải thuật. Nó ước lượng độ phức tạp thời gian trường hợp tốt nhất hay chính là lượng thời gian ngắn nhất cần thiết bởi một giải thuật. Đồ thị biểu diễn như sau:
+
+Omega Notation
+Ví dụ, với một hàm f(n):
+
+Ω(f(n)) ≥ { g(n) : nếu tồn tại c &gt; 0 và n0 sao cho g(n) ≤ c.f(n) với mọi n &gt; n0. }
+Theta Notation, θ trong Cấu trúc dữ liệu và giải thuật
+The θ(n) là cách để biểu diễn cả tiệm cận trên và tiệm cận dưới của thời gian chạy của một giải thuật. Bạn nhìn vào đồ thì sau:
+
+Theta Notation
+θ(f(n)) = { g(n) nếu và chỉ nếu g(n) =  Ο(f(n)) và g(n) = Ω(f(n)) với mọi n &gt; n0. }
+
+
+
+Một số Asymptotic Notation phổ biến trong cấu trúc dữ liệu và giải thuật
+hằng số	−	Ο(1)
+logarit	−	Ο(log n)
+Tuyến tính (Linear)	−	Ο(n)
+n log n	−	Ο(n log n)
+Bậc hai (Quadratic)	−	Ο(n2)
+Bậc 3 (cubic)	−	Ο(n3)
+Đa thức (polynomial)	−	nΟ(1)
+Hàm mũ (exponential)	−	2Ο(n)</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Insertion_Sort">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sắp xếp chèn (Insertion Sort) là gì ?
+Sắp xếp chèn là một giải thuật sắp xếp dựa trên so sánh in-place. Ở đây, một danh sách con luôn luôn được duy trì dưới dạng đã qua sắp xếp. Sắp xếp chèn là chèn thêm một phần tử vào danh sách con đã qua sắp xếp. Phần tử được chèn vào vị trí thích hợp sao cho vẫn đảm bảo rằng danh sách con đó vẫn sắp theo thứ tự.
+
+Với cấu trúc dữ liệu mảng, chúng ta tưởng tượng là: mảng gồm hai phần: một danh sách con đã được sắp xếp và phần khác là các phần tử không có thứ tự. Giải thuật sắp xếp chèn sẽ thực hiện việc tìm kiếm liên tiếp qua mảng đó, và các phần tử không có thứ tự sẽ được di chuyển và được chèn vào vị trí thích hợp trong danh sách con (của cùng mảng đó).
+
+Giải thuật này không thích hợp sử dụng với các tập dữ liệu lớn khi độ phức tạp trường hợp xấu nhất và trường hợp trung bình là Ο(n2) với n là số phần tử.
+
+Giải thuật sắp xếp chèn (Insertion Sort)
+Từ minh họa trên chúng ta đã có bức tranh tổng quát về giải thuật sắp xếp chèn, từ đó chúng ta sẽ có các bước cơ bản trong giải thuật như sau:
+
+Bước 1: Kiểm tra nếu phần tử đầu tiên đã được sắp xếp. trả về 1
+Bước 2: Lấy phần tử kế tiếp
+Bước 3: So sánh với tất cả phần tử trong danh sách con đã qua sắp xếp
+Bước 4: Dịch chuyển tất cả phần tử trong danh sách con mà lớn hơn giá trị để được sắp xếp
+Bước 5: Chèn giá trị đó
+Bước 6: Lặp lại cho tới khi danh sách được sắp xếp</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_DoThi">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cấu trúc dữ liệu đồ thị là gì ?
+Một đồ thị (đồ thị) là một dạng biểu diễn hình ảnh của một tập các đối tượng, trong đó các cặp đối tượng được kết nối bởi các link. Các đối tượng được nối liền nhau được biểu diễn bởi các điểm được gọi là các đỉnh (vertices), và các link mà kết nối các đỉnh với nhau được gọi là các cạnh (edges).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#KhaiNiem_CTDL_Tree">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cấu trúc dữ liệu cây là gì ?
+Cấu trúc dữ liệu cây biểu diễn các nút (node) được kết nối bởi các cạnh. Chúng ta sẽ tìm hiểu về Cây nhị phân (Binary Tree) và Cây tìm kiếm nhị phân (Binary Search Tree) trong phần này.
+
+Cây nhị phân là một cấu trúc dữ liệu đặc biệt được sử dụng cho mục đích lưu trữ dữ liệu. Một cây nhị phân có một điều kiện đặc biệt là mỗi nút có thể có tối đa hai nút con. Một cây nhị phân tận dụng lợi thế của hai kiểu cấu trúc dữ liệu: một mảng đã sắp thứ tự và một danh sách liên kết (Linked List), do đó việc tìm kiếm sẽ nhanh như trong mảng đã sắp thứ tự và các thao tác chèn và xóa cũng sẽ nhanh bằng trong Linked List.
+Các khái niệm cơ bản về cây nhị phân
+Dưới đây là một số khái niệm quan trọng liên quan tới cây nhị phân:
+
+Đường: là một dãy các nút cùng với các cạnh của một cây.
+
+Nút gốc (Root): nút trên cùng của cây được gọi là nút gốc. Một cây sẽ chỉ có một nút gốc và một đường xuất phát từ nút gốc tới bất kỳ nút nào khác. Nút gốc là nút duy nhất không có bất kỳ nút cha nào.
+
+Nút cha: bất kỳ nút nào ngoại trừ nút gốc mà có một cạnh hướng lên một nút khác thì được gọi là nút cha.
+
+Nút con: nút ở dưới một nút đã cho được kết nối bởi cạnh dưới của nó được gọi là nút con của nút đó.
+
+Nút lá: nút mà không có bất kỳ nút con nào thì được gọi là nút lá.
+
+Cây con: cây con biểu diễn các con của một nút.
+
+Truy cập: kiểm tra giá trị của một nút khi điều khiển là đang trên một nút đó.
+
+Duyệt: duyệt qua các nút theo một thứ tự nào đó.
+
+Bậc: bậc của một nút biểu diễn số con của một nút. Nếu nút gốc có bậc là 0, thì nút con tiếp theo sẽ có bậc là 1, và nút cháu của nó sẽ có bậc là 2, …
+
+Khóa (Key): biểu diễn một giá trị của một nút dựa trên những gì mà một thao tác tìm kiếm thực hiện trên nút.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Linked_List">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Danh sách liên kết (Linked List) là gì ?
+Một Danh sách liên kết (Linked List) là một dãy các cấu trúc dữ liệu được kết nối với nhau thông qua các liên kết (link). Hiểu một cách đơn giản thì Danh sách liên kết là một cấu trúc dữ liệu bao gồm một nhóm các nút (node) tạo thành một chuỗi. Mỗi nút gồm dữ liệu ở nút đó và tham chiếu đến nút kế tiếp trong chuỗi.
+
+Danh sách liên kết là cấu trúc dữ liệu được sử dụng phổ biến thứ hai sau mảng. Dưới đây là các khái niệm cơ bản liên quan tới Danh sách liên kết:
+
+Link (liên kết): mỗi link của một Danh sách liên kết có thể lưu giữ một dữ liệu được gọi là một phần tử.
+
+Next: Mỗi liên kết của một Danh sách liên kết chứa một link tới next link được gọi là Next.
+
+First: một Danh sách liên kết bao gồm các link kết nối tới first link được gọi là First.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Merge_Sort">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật sắp xếp trộn (Merge Sort) là gì ?
+Sắp xếp trộn (Merge Sort) là một giải thuật sắp xếp dựa trên giải thuật Chia để trị (Divide and Conquer). Với độ phức tạp thời gian trường hợp xấu nhất là Ο(n log n) thì đây là một trong các giải thuật đáng được quan tâm nhất.
+
+Đầu tiên, giải thuật sắp xếp trộn chia mảng thành hai nửa và sau đó kết hợp chúng lại với nhau thành một mảng đã được sắp xếp.
+
+Giải thuật cho Sắp xếp trộn (Merge Sort) :
+Giải thuật sắp xếp trộn tiếp tục tiến trình chia danh sách thành hai nửa cho tới khi không thể chia được nữa. Theo định nghĩa, một list mà chỉ có một phần tử thì list này coi như là đã được sắp xếp. Sau đó, giải thuật sắp xếp trộn kết hợp các sorted list lại với nhau để tạo thành một list mới mà cũng đã được sắp xếp.
+
+Bước 1: Nếu chỉ có một phần tử trong list thì list này được xem như là đã được 
+sắp xếp. Trả về list hay giá trị nào đó.
+Bước 2: Chia list một cách đệ qui thành hai nửa cho tới khi không thể chia được nữa.
+Bước 3: Kết hợp các list nhỏ hơn (đã qua sắp xếp) thành list mới (cũng đã được sắp xếp).
+Giải thuật mẫu cho Sắp xếp trộn (Merge Sort)
+Có thể nói rằng với giải thuật sắp xếp trộn, bạn cần chú ý hai điểm chính: chia và hợp.
+
+Bởi vì giải thuật sắp xếp trộn làm việc theo phương thức đệ qui nên phần triển khai giải thuật chúng ta cũng nên sử dụng đệ qui để biểu diễn.
+
+
+
+Bắt đầu giải thuật sắp xếp trộn mergesort( biến a là một mảng )
+   if ( n == 1 ) return a
+
+   khai báo biến l1 là một mảng = a[0] ... a[n/2]
+   khai báo biến l2 là một mảng = a[n/2+1] ... a[n]
+
+   l1 = mergesort( l1 )
+   l2 = mergesort( l2 )
+
+   return merge( l1, l2 ) // gọi hàm merge()
+Kết thúc giải thuật
+
+
+Bắt đầu hàm merge( Mảng a, mảng b )
+
+   khai báo biến c là một mảng
+
+   while ( a và b có phần tử )
+      if ( a[0] &gt; b[0] )
+         Thêm b[0] vào cuối mảng c
+         Xóa b[0] từ b
+      else
+         Thêm a[0] vào cuối mảng c
+         Xóa a[0] từ a
+      kết thúc if
+   kết thúc while
+   
+   while ( a có phần tử )
+      Thêm a[0] vào cuối mảng c
+      Xóa a[0] từ a
+   kết thúc while
+   
+   while ( b có phần tử )
+      Thêm b[0] vào cuối mảng c
+      Xóa b[0] từ b
+   kết thúc while
+   
+   return c
+	
+Kết thúc hàm</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NhiPhan">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật tìm kiếm nhị phân (Binary Search) là gì ?
+Binany Search (Tìm kiếm nhị phân) là một giải thuật tìm kiếm nhanh với độ phức tạp thời gian chạy là Ο(log n). Giải thuật tìm kiếm nhị phân làm việc dựa trên nguyên tắc chia để trị (Divide and Conquer). Để giải thuật này có thể làm việc một cách chính xác thì tập dữ liệu nên ở trong dạng đã được sắp xếp.
+
+Binary Search tìm kiếm một phần tử cụ thể bằng cách so sánh phần tử tại vị trí giữa nhất của tập dữ liệu. Nếu tìm thấy kết nối thì chỉ mục của phần tử được trả về. Nếu phần tử cần tìm là lớn hơn giá trị phần tử giữa thì phần tử cần tìm được tìm trong mảng con nằm ở bên phải phần tử giữa; nếu không thì sẽ tìm ở trong mảng con nằm ở bên trái phần tử giữa. Tiến trình sẽ tiếp tục như vậy trên mảng con cho tới khi tìm hết mọi phần tử trên mảng con này.
+
+Giải thuật mẫu cho Binary Search
+Dưới đây là code mẫu cho giải thuật tìm kiếm nhị phân:
+
+Giải thuật tìm kiếm nhị phân (Binary Search)
+   A ← một mảng đã được sắp xếp
+   n ← kích cỡ mảng
+   x ← giá trị để tìm kiếm trong mảng
+
+   gán lowerBound = 1
+   gán upperBound = n 
+
+   while x not found
+   
+      if upperBound &lt; lowerBound 
+         EXIT: x không tồn tại.
+   
+      gán midPoint = lowerBound + ( upperBound - lowerBound ) / 2
+      
+      if A[midPoint] &lt; x
+         gán lowerBound = midPoint + 1
+         
+      if A[midPoint] &gt; x
+         gán upperBound = midPoint - 1 
+
+      if A[midPoint] = x 
+         EXIT: x được tìm thấy tại midPoint
+
+   kết thúc while
+   
+kết thúc giải thuật</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#NoiSuy">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật Tìm kiếm nội suy (Interpolation Search) là gì ?
+Tìm kiếm nội suy (Interpolation Search) là biến thể cải tiến của Tìm kiếm nhị phân (Binary Search). Để giải thuật tìm kiếm này làm việc chính xác thì tập dữ liệu phải được sắp xếp.
+
+Binary Search có lợi thế lớn về độ phức tạp thời gian khi so sánh với Linear Search. Linear Search có độ phức tạp trường hợp xấu nhất là Ο(n) trong khi Binary Search là Ο(log n).
+
+Có một số tình huống mà vị trí của dữ liệu cần tìm có thể đã được biết trước. Ví dụ, trong trường hợp danh bạ điện thoại, nếu chúng ta muốn tìm số điện thoại của Hương chẳng hạn. Trong trường hợp này, Linear Search và cả Binary Search có thể là chậm khi thực hiện tìm kiếm, khi mà chúng ta có thể trực tiếp nhảy tới phần không gian bộ nhớ có tên bắt đầu với H được lưu giữ.
+
+Giải thuật Tìm kiếm nội suy
+Bởi vì đây là sự cải tiến của giải thuật Binary Search nên chúng ta sẽ chỉ đề cập tới các bước để tìm kiếm chỉ mục của giá trị cần tìm bởi sử dụng vị trí dò.
+
+Bước 1 : Bắt đầu tìm kiếm dữ liệu từ phần giữa của danh sách
+Bước 2 : Nếu đây là một so khớp (một kết nối), thì trả về chỉ mục của phần tử, và thoát.
+Bước 3 : Nếu không phải là một so khớp, thì là vị trí dò.
+Bước 4 : Chia danh sách bởi sử dụng phép tính tìm vị trí dò và tìm vị trí giữa mới.
+Bước 5 : Nếu dữ liệu cần tìm lớn hơn giá trị tại vị trí giữa, thì tìm kiếm trong mảng con bên phải.
+Bước 6 : Nếu dữ liệu cần tìm nhỏ hơn giá trị tại vị trí giữa, thì tìm kiếm trong mảng con bên trái
+Bước 7 : Lặp lại cho tới khi tìm thấy so khớp</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Queue">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cấu trúc dữ liệu hàng đợi (Queue) là gì ?
+Hàng đợi (Queue) là một cấu trúc dữ liệu trừu tượng, là một cái gì đó tương tự như hàng đợi trong đời sống hàng ngày (xếp hàng).
+Khác với ngăn xếp, hàng đợi là mở ở cả hai đầu. Một đầu luôn luôn được sử dụng để chèn dữ liệu vào (hay còn gọi là sắp vào hàng) và đầu kia được sử dụng để xóa dữ liệu (rời hàng). Cấu trúc dữ liệu hàng đợi tuân theo phương pháp First-In-First-Out, tức là dữ liệu được nhập vào đầu tiên sẽ được truy cập đầu tiên.
+
+Trong đời sống thực chúng ta có rất nhiều ví dụ về hàng đợi, chẳng hạn như hàng xe ô tô trên đường một chiều (đặc biệt là khi tắc xe), trong đó xe nào vào đầu tiên sẽ thoát ra đầu tiên. Một vài ví dụ khác là xếp hàng học sinh, xếp hàng mua vé, …
+Các hoạt động cơ bản trên cấu trúc dữ liệu hàng đợi
+Các hoạt động trên cấu trúc dữ liệu hàng đợi có thể liên quan tới việc khởi tạo hàng đợi, sử dụng dữ liệu trên hàng đợi và sau đó là xóa dữ liệu khỏi bộ nhớ. Danh sách dưới đây là một số hoạt động cơ bản có thể thực hiện trên cấu trúc dữ liệu hàng đợi:
+
+Hoạt động enqueue(): thêm (hay lưu trữ) một phần tử vào trong hàng đợi.
+
+Hoạt động dequeue(): xóa một phần tử từ hàng đợi.
+
+Để sử dụng hàng đợi một cách hiệu quả, chúng ta cũng cần kiểm tra trạng thái của hàng đợi. Để phục vụ cho mục đích này, dưới đây là một số tính năng hỗ trợ khác của hàng đợi:
+
+Phương thức peek(): lấy phần tử ở đầu hàng đợi, mà không xóa phần tử này.
+
+Phương thức isFull(): kiểm tra xem hàng đợi là đầy hay không.
+
+Phương thức isEmpty(): kiểm tra xem hàng đợi là trống hay hay không....</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Quick_Sort">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sắp xếp nhanh (Quick Sort) là gì ?
+Giải thuật sắp xếp nhanh (Quick Sort) là một giải thuật hiệu quả cao và dựa trên việc chia mảng dữa liệu thành các mảng nhỏ hơn. Giải thuật sắp xếp nhanh chia mảng thành hai phần bằng cách so sánh từng phần tử của mảng với một phần tử được chọn gọi là phần tử chốt (Pivot): một mảng bao gồm các phần tử nhỏ hơn hoặc bằng phần tử chốt và mảng còn lại bao gồm các phần tử lớn hơn hoặc bằng phần tử chốt.
+
+Tiến trình chia này diễn ra tiếp tục cho tới khi độ dài của các mảng con đều bằng 1. Giải thuật sắp xếp nhanh tỏ ra khá hiệu quả với các tập dữ liệu lớn khi mà độ phức tạp trường hợp trung bình và trường hợp xấu nhất là O(nlogn) với n là số phần tử.
+
+Kỹ thuật chọn phần tử chốt trong giải thuật sắp xếp nhanh (Quick Sort)
+Kỹ thuật chọn phần tử chốt ảnh hưởng khá nhiều đến khả năng rơi vào các vòng lặp vô hạn đối với các trường hợp đặc biệt. Tốt nhất là chọn phần tử chốt (pivot) nằm ở trung vị của danh sách. Khi đó, sau log2(n) lần chia chúng ta sẽ đạt tới kích thước các mảng con bằng 1.
+
+Dưới đây là các cách chọn phần tử chốt:
+
+Chọn phần tử đứng đầu hoặc đứng cuối làm phần tử chốt.
+
+Chọn phần tử đứng giữa danh sách làm phần tử chốt.
+
+Chọn phần tử trung vị trong ba phần tử đứng đầu, đứng giữa và đứng cuối làm phần tử chốt.
+
+Chọn phần tử ngẫu nhiên làm phần tử chốt. Tuy nhiên cách này rất dễ dẫn đến khả năng rơi vào các trường hợp đặc biệt.
+
+Giải thuật phần tử chốt trong sắp xếp nhanh (Quick Sort)
+Dựa vào cách chia danh sách trong giải thuật sắp xếp nhanh ở trên, chúng ta có thể viết một giải thuật như dưới đây.
+
+Bước 1: Chọn phần tử chốt là phần tử có chỉ mục cao nhất (phần tử ở cuối danh sách)
+Bước 2: Khai báo hai biến để trỏ tới bên trái và bên phải của danh sách, ngoại trừ phần tử chốt
+Bước 3: Biến bên trái trỏ tới mảng con bên trái
+Bước 4: Biến bên phải trỏ tới mảng con bên phải 
+Bước 5: Khi giá trị tại biến bên trái là nhỏ hơn phần tử chốt thì di chuyển sang phải
+Bước 6: Khi giá trị tại biến bên phải là lớn hơn phần tử chốt thì di chuyển sang trái 
+Bước 7: Nếu không trong trường hợp cả bước 5 và bước 6 thì tráo đổi giá trị biến trái và phải
+Bước 8: Nếu left ≥ right, thì đây chính là giá trị chốt mới
+
+
+Giải thuật phần tử chốt mẫu trong sắp xếp nhanh (Quick Sort)
+Từ các bước trên, chúng ta có thể suy ra code mẫu cho giải thuật sắp xếp nhanh (Quick Sort) như sau:
+
+Bắt đầu hàm partitionFunc(left, right, pivot)
+   leftPointer = left -1
+   rightPointer = right
+
+   while True thực hiện
+      while A[++leftPointer] &lt; pivot thực hiện
+         //không làm điều gì            
+      kết thúc while
+		
+      while rightPointer &gt; 0 &amp;&amp; A[--rightPointer] &gt; pivot thực hiện
+         //không làm điều gì     
+      kết thúc while
+		
+      if leftPointer &gt;= rightPointer
+         break
+      else                
+         Tráo đổi leftPointer,rightPointer
+      kết thúc if
+		
+   kết thúc while 
+	
+   Tráo đổi leftPointer,right
+   return leftPointer
+	
+Kết thúc hàm</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Selection_Sort">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật sắp xếp chọn (Selection Sort) là gì ?
+Giải thuật sắp xếp chọn (Selection Sort) là một giải thuật đơn giản. Giải thuật sắp xếp này là một giải thuật dựa trên việc so sánh in-place, trong đó danh sách được chia thành hai phần, phần được sắp xếp (sorted list) ở bên trái và phần chưa được sắp xếp (unsorted list) ở bên phải. Ban đầu, phần được sắp xếp là trống và phần chưa được sắp xếp là toàn bộ danh sách ban đầu.
+
+Phần tử nhỏ nhất được lựa chọn từ mảng chưa được sắp xếp và được tráo đổi với phần bên trái nhất và phần tử đó trở thành phần tử của mảng được sắp xếp. Tiến trình này tiếp tục cho tới khi toàn bộ từng phần tử trong mảng chưa được sắp xếp đều được di chuyển sang mảng đã được sắp xếp.
+
+Giải thuật này không phù hợp với tập dữ liệu lớn khi mà độ phức tạp trường hợp xấu nhất và trường hợp trung bình là O(n2) với n là số phần tử.
+
+
+Giải thuật cho sắp xếp chọn (Selection Sort)
+Bước 1: Thiết lập MIN về vị trí 0
+Bước 2: Tìm kiếm phần tử nhỏ nhất trong danh sách
+Bước 3: Tráo đổi với giá trị tại vị trí MIN
+Bước 4: Tăng MIN để trỏ tới phần tử tiếp theo
+Bước 5: Lặp lại cho tới khi toàn bộ danh sách đã được sắp xếp
+Giải thuật mẫu cho sắp xếp chọn
+Bắt đầu giải thuật sắp xếp chọn (Selection Sort) 
+   list  : mảng các phần tử
+   n     : kích cỡ mảng
+
+   for i = 1 tới n - 1
+   /* thiết lập phần tử hiện tại là min*/
+      min = i    
+  
+      /* kiểm tra phần tử có là nhỏ nhất không */
+
+      for j = i+1 tới n 
+         if list[j] &lt; list[min] thì
+            min = j;
+         kết thúc if
+      kết thúc for
+
+      /* tráo đổi phần tử nhỏ nhất với phần tử hiện tại*/
+      if indexMin != i  then
+         tráo đổi list[min] và list[i]
+      kết thúc if
+
+   kết thúc for
+	
+Kết thúc giải thuật</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Shell_Sort">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shell Sort là gì ?
+Shell Sort là một giải thuật sắp xếp mang lại hiệu quả cao dựa trên giải thuật sắp xếp chèn (Insertion Sort). Giải thuật này tránh các trường hợp phải tráo đổi vị trí của hai phần tử xa nhau trong giải thuật sắp xếp chọn (nếu như phần tử nhỏ hơn ở vị trí bên phải khá xa so với phần tử lớn hơn bên trái).
+
+Đầu tiên, giải thuật này sử dụng giải thuật sắp xếp chọn trên các phần tử có khoảng cách xa nhau, sau đó sắp xếp các phần tử có khoảng cách hẹp hơn. Khoảng cách này còn được gọi là khoảng (interval) – là số vị trí từ phần tử này tới phần tử khác. Khoảng này được tính dựa vào công thức Knuth như sau:
+
+h = h * 3 + 1
+
+trong đó:
+   h là Khoảng (interval) với giá trị ban đâu là 1
+Giải thuật này khá hiệu quả với các tập dữ liệu có kích cỡ trung bình khi mà độ phức tạp trường hợp xấu nhất và trường hợp trung bình là O(n), với n là số phần tử.
+Giải thuật cho Shell Sort
+Bây giờ chúng ta sẽ theo dõi giải thuật cho Shell Sort:
+
+Bước 1: Khởi tạo giá trị h
+Bước 2: Chia list thành các sublist nhỏ hơn tương ứng với h
+Bước 3: Sắp xếp các sublist này bởi sử dụng sắp xếp chèn (Insertion Sort)
+Bước 4: Lặp lại cho tới khi list đã được sắp xếp
+Giải thuật mẫu cho Shell Sort
+Từ các bước trên chúng ta có thể thiết kế một giải thuật mẫu cho Shell Sort như sau:
+
+Bắt đầu hàm shellSort()
+    A : mảng các phần tử 
+	
+   /* Tính toán giá trị Khoảng (interval)*/
+   while interval &lt; A.length /3 thực hiện:
+      interval = interval * 3 + 1	    
+   kết thúc while
+   
+   while interval &gt; 0 thực hiện:
+
+      for outer = interval; outer &lt; A.length; outer ++ thực hiện:
+
+      /* chọn giá trị để chèn */
+      valueToInsert = A[outer]
+      inner = outer;
+
+         /*dịch chuyển phần tử sang phải*/
+         while inner &gt; interval -1 &amp;&amp; A[inner - interval] &gt;= valueToInsert do:
+            A[inner] = A[inner - interval]
+            inner = inner - interval
+         kết thúc while
+
+      /* chèn giá trị vào vị trí trên */
+      A[inner] = valueToInsert
+
+      kết thúc for
+
+   /* Tính toán giá trị Khoảng (interval)*/
+   interval = (interval -1) /3;	  
+
+   kết thúc while
+   
+Kết thúc hàm</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#SpanningTree">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cây khung (Spanning Tree) là gì ?
+Một cây khung là một tập con của Grahp G mà có tất cả các đỉnh được bao bởi số cạnh tối thiểu nhất. Vì thế, một cây khung sẽ không hình thành một vòng tuần hoàn và nó cũng không thể bị ngắt giữa chừng.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#Stack">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ngăn xếp (Stack) là gì ?
+Một ngăn xếp là một cấu trúc dữ liệu trừu tượng (Abstract Data Type – viết tắt là ADT), hầu như được sử dụng trong hầu hết mọi ngôn ngữ lập trình. Đặt tên là ngăn xếp bởi vì nó hoạt động như một ngăn xếp trong đời sống thực, ví dụ như một cỗ bài hay một chồng đĩa, …
+Trong đời sống thực, ngăn xếp chỉ cho phép các hoạt động tại vị trí trên cùng của ngăn xếp. Ví dụ, chúng ta chỉ có thể đặt hoặc thêm một lá bài hay một cái đĩa vào trên cùng của ngăn xếp. Do đó, cấu trúc dữ liệu trừu tượng ngăn xếp chỉ cho phép các thao tác dữ liệu tại vị trí trên cùng. Tại bất cứ thời điểm nào, chúng ta chỉ có thể truy cập phần tử trên cùng của ngăn xếp.
+
+Đặc điểm này làm cho ngăn xếp trở thành cấu trúc dữ liệu dạng LIFO. LIFO là viết tắt của Last-In-First-Out. Ở đây, phần tử được đặt vào (được chèn, được thêm vào) cuối cùng sẽ được truy cập đầu tiên. Trong thuật ngữ ngăn xếp, hoạt động chèn được gọi là hoạt động PUSH và hoạt động xóa được gọi là hoạt động POP.
+
+Các hoạt động cơ bản trên cấu trúc dữ liệu ngăn xếp
+Các hoạt động cơ bản trên ngăn xếp có thể liên quan tới việc khởi tạo ngăn xếp, sử dụng nó và sau đó xóa nó. Ngoài các hoạt động cơ bản này, một ngăn xếp có hai hoạt động nguyên sơ liên quan tới khái niệm, đó là:
+
+Hoạt động push(): lưu giữ một phần tử trên ngăn xếp.
+
+Hoạt động pop(): xóa một phần tử từ ngăn xếp.
+
+Khi dữ liệu đã được PUSH lên trên ngăn xếp:
+
+Để sử dụng ngăn xếp một cách hiệu quả, chúng ta cũng cần kiểm tra trạng thái của ngăn xếp. Để phục vụ cho mục đích này, dưới đây là một số tính năng hỗ trợ khác của ngăn xếp:
+
+Hoạt động peek(): lấy phần tử dữ liệu ở trên cùng của ngăn xếp, mà không xóa phần tử này.
+
+Hoạt động isFull(): kiểm tra xem ngăn xếp đã đầy hay chưa.
+
+Hoạt động isEmpty(): kiểm tra xem ngăn xếp là trống hay không.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuRong">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật tìm kiếm theo chiều rộng là gì ?
+Giải thuật tìm kiếm theo chiều rộng (Breadth First Search – viết tắt là BFS) duyệt qua một đồ thị theo chiều rộng và sử dụng hàng đợi (queue) để ghi nhớ đỉnh liền kề để bắt đầu việc tìm kiếm khi không gặp được đỉnh liền kề trong bất kỳ vòng lặp nào.
+Giải thuật này tuân theo qui tắc:
+
+Qui tắc 1: Duyệt tiếp tới đỉnh liền kề mà chưa được duyệt. Đánh dấu đỉnh mà đã được duyệt. Hiển thị đỉnh đó và đẩy vào trong một hàng đợi (queue)..
+
+Qui tắc 2: Nếu không tìm thấy đỉnh liền kề, thì xóa đỉnh đầu tiên trong hàng đợi.
+
+Qui tắc 3: Lặp lại Qui tắc 1 và 2 cho tới khi hàng đợi là trống.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TimKiemTheo_ChieuSau">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giải thuật tìm kiếm theo chiều sâu là gì ?
+Giải thuật tìm kiếm theo chiều sâu (Depth First Search – viết tắt là DFS), còn được gọi là giải thuật tìm kiếm ưu tiên chiều sâu, là giải thuật duyệt hoặc tìm kiếm trên một cây hoặc một đồ thị và sử dụng stack (ngăn xếp) để ghi nhớ đỉnh liền kề để bắt đầu việc tìm kiếm khi không gặp được đỉnh liền kề trong bất kỳ vòng lặp nào. Giải thuật tiếp tục cho tới khi gặp được đỉnh cần tìm hoặc tới một nút không có con. Khi đó giải thuật quay lui về đỉnh vừa mới tìm kiếm ở bước trước.
+
+Giải thuật này tuân theo qui tắc sau:
+
+Qui tắc 1: Duyệt tiếp tới đỉnh liền kề mà chưa được duyệt. Đánh dấu đỉnh mà đã được duyệt. Hiển thị đỉnh đó và đẩy vào trong một ngăn xếp (stack).
+
+Qui tắc 2: Nếu không tìm thấy đỉnh liền kề, thì lấy một đỉnh từ trong ngăn xếp (thao tác pop up). (Giải thuật sẽ lấy tất cả các đỉnh từ trong ngăn xếp mà không có các đỉnh liền kề nào)
+
+Qui tắc 3: Lặp lại các qui tắc 1 và qui tắc 2 cho tới khi ngăn xếp là trống.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/5/untitled-ontology-4#TuyenTinh">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tìm kiếm tuyến tính (Linear Search) là gì ?
+Linear Search là một giải thuật tìm kiếm rất cơ bản. Trong kiểu tìm kiếm này, một hoạt động tìm kiếm liên tiếp được diễn ra qua tất cả từng phần tử. Mỗi phần tử đều được kiểm tra và nếu tìm thấy bất kỳ kết nối nào thì phần tử cụ thể đó được trả về; nếu không tìm thấy thì quá trình tìm kiếm tiếp tục diễn ra cho tới khi tìm kiếm hết dữ liệu.
+Giải thuật tìm kiếm tuyến tính
+Giải thuật tìm kiếm tuyến tính ( Mảng A, Giá trị x)
+
+Bước 1: Thiết lập i thành 1
+Bước 2: Nếu i &gt; n thì chuyển tới bước 7
+Bước 3: Nếu A[i] = x thì chuyển tới bước 6
+Bước 4: Thiết lập i thành i + 1
+Bước 5: Tới bước 2
+Bước 6: In phần tử x được tìm thấy tại chỉ mục i và tới bước 8
+Bước 7: In phần tử không được tìm thấy
+Bước 8: Thoát</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
